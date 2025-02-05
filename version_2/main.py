@@ -23,7 +23,7 @@ def validate_date(date_string):
     return True
 
 def validate_phone(phone):
-    pattern = r'^024-\d{3}-\d{4}$'
+    pattern = r'^\d{3}-\d{3}-\d{4}$'
     return re.match(pattern, phone) is not None
 
 def calculate_age(date_of_birth):
